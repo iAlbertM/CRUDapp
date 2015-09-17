@@ -1,0 +1,276 @@
+html { font-size: 62.5%; }
+
+body {
+	font: normal 1em/1.4 "Roboto Condensed", "Roboto", sans-serif;
+	padding: 1rem 1.5rem;
+	background: rgba(2, 33, 56, 0.8);/*rgba(1, 73, 123, 0.8)*/
+}
+`
+h1,
+h2,
+p {
+	font-family: "Roboto Condensed", "Roboto", sans-serif;
+	color: #596b7b;
+}
+
+h1 { 
+	font-size: 4.9rem;
+	color: rgba(255, 255, 255, 0.90);
+	text-transform: uppercase;
+	font-weight: 900;
+	line-height: 1;
+	margin: 2rem 0;
+}
+
+h2 {
+	font-size: 2.9rem;
+	color: rgba(255, 255, 255, 0.5);
+	text-transform: uppercase;
+	font-weight: 100;
+	margin:-2rem 0 4rem;
+}
+
+/* SECTION */
+section {
+	display: none;
+}
+/* BUTTONS */
+button,
+input {
+	color: inherit;
+	font: inherit;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+button,
+input[type=submit] {
+	cursor: pointer;
+	color: #fff;
+	text-align: center;
+	transition: background .25s ease-in-out;
+	padding: 0;
+	border: none;
+}
+
+button {
+	background-color: rgba(73, 106, 139, 0.86);
+	float: right;
+	width: 3rem;
+	height: 3rem;
+	font-size: 1rem;
+	border-radius: 0.5rem;
+}
+
+button:hover {
+	color: #fff;
+	background-color: #F44336;
+	opacity: 0.7;
+	transition: background .25s ease-in-out;
+}
+
+label {
+	font-size: 1.4rem;
+	color: rgba(255, 255, 255, 0.86)
+}
+/* INPUT */
+input {
+	font-size: 1.6rem;
+	line-height: normal;
+	margin: 1rem auto;
+	width: 100%;
+	display: block;
+}
+
+input[type=submit] {
+	text-transform: uppercase;
+	border-radius: .8rem;
+	outline: 0;
+	padding: 1rem;
+	margin: 5rem auto 1rem;
+	line-height: 2;
+	background-color: rgba(73, 106, 139, 1);
+}
+
+input[type=submit]:hover {
+	transition: background .25s ease-in-out;
+	background-color: rgba(73, 106, 139, 0.86);
+}
+
+input::-webkit-input-placeholder {
+	opacity: 0.5;
+	font-style: italic;
+}
+
+input::-moz-placeholder {
+	opacity: 0.5;
+	font-style: italic;
+}
+
+input:-moz-placeholder {   /* Older versions of Firefox */
+	opacity: 0.5;
+	font-style: italic;
+}
+
+input:-ms-input-placeholder { 
+	opacity: 0.5;
+	font-style: italic;
+}
+
+form input:not([type=submit]) {
+	outline: 0;
+	border: 1px solid lightgray;
+	border-radius: 10rem;
+	font-size: 1.6rem;
+	padding: 0.5rem 1.5rem;
+}
+
+input[type=text]:focus {
+	outline: 0;
+	box-shadow: 0 0 2px 1px #00bcd4;
+}
+
+footer {
+	margin: 2rem auto;
+	text-align: center;
+	font-size: 1.6rem;
+	padding: 1rem;
+}
+
+
+/*
+ Responsive styles
+*/
+@media (min-width: 600px) {
+	body {
+		max-width: 45rem;
+		min-height: 10rem;
+		margin: auto;
+		padding:
+	}
+	form::before, form::after {
+		content= "";
+		display: table;
+		clear: both;
+	}
+	
+	form {
+		max-width: 45rem;
+		min-height: 10rem;
+		overflow: visible;
+		width: 40rem;
+		margin: auto;
+		padding: 0;
+	}
+	
+	form p {
+		margin: 0;
+		padding: 0;
+		display: block;
+		
+	}
+	
+	form label {
+		margin: 0;
+		padding: 0;
+		float: left;
+		width: 12%;
+		text-transform: lowercase;
+		font-variant:small-caps;
+	}
+	
+	input:not([type=submit]) {
+		display:inline-block;
+		width:50%;
+		float: right;
+		margin: 3rem 1rem;
+	}
+	
+	p:last-of-type {
+		position: relative;
+		bottom: 0;
+	}
+	button,
+input[type=submit] {
+/*	position: absolute;*/
+/*	bottom: 0;*/
+	cursor: pointer;
+	color: #fff;
+	text-align: center;
+	transition: background .25s ease-in-out;
+	padding: 0;
+	border: none;
+}
+	
+	h1 {
+		padding: 1rem 0;
+		margin: 1rem 0; 
+		font-size: 4.5rem;
+		text-align: left;
+		letter-spacing: 0.2rem;
+	}
+
+	p { 
+		font-size: 1.2rem;
+		line-height: 1;
+		padding: 0;
+		margin-left: 1rem;
+	}
+	
+	button,
+	input[type=submit] {
+		text-align: center;
+		padding: 0;
+		border-radius: .1rem;
+	}
+
+	button {
+		margin: .5rem;
+		width: 2rem;
+		height: 2rem;
+		font-size: 1rem;
+	}
+	
+	input[type=text] {
+		vertical-align: middle;
+		font-size: 1.2rem;
+		padding: 0.5ren 0;
+		width: 100%;
+	}
+
+	input[type=submit] {
+		margin-left: 1rem;
+		vertical-align: middle;
+		padding: 0 1rem;
+		font-size: 1.4rem;
+		background-color: rgba(73, 106, 139, 1);
+		border: 2px solid rgba(205, 220, 57, 0.6);
+		outline: 0;
+	}
+
+	input[type=submit]:hover {
+		transition: background .2s ease-out;
+		background-color: rgba(73, 106, 139, 0.8);
+	}
+	
+	ul {
+		margin: 10rem auto 4rem;
+	}
+	
+	ul li {
+		vertical-align: middle;
+		padding: 1rem .5rem 1rem 1.5rem;
+	}
+
+	footer {
+		margin: 2rem auto;
+		text-align: center;
+		font-size: 1.2rem;
+		padding: 1rem;
+		color: #ccc;
+	}
+}
