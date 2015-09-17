@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head lang="en">
+</head>
+<body ng-app="myApp" ng-controller="view1Controller">
+<h1>Schedule</h1>
+	<!-- C create -->
+	<section>
+		<h2>Add tasks </h2>
+		<input type="text" name="task" id="task" ng-model="task">
+		<input type="submit" ng-click="addTask()">
+	</section>
+	
+	<!-- R read -->
+	<section>
+		<h2>Tasks To-Do {{ newtasksArray.length }}</h2>
+		<ul>
+			<li ng-repeat="task in tasks">
+				{{ task }}
+				<button ng-click="removeTasks($index)">x</button>
+			</li>
+		</ul>
+	</section>
+	<footer>
+		<p>© 2015 Albert Martinez</p>
+	</footer>
+</body>
+</html>

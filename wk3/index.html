@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Albert Martinez | FWF - Route &amp; Param</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/material2.css">
+	
+	<!-- AngularJS -->
+	<script src="js/angular.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/angular-route.min.js"></script>
+	<script src="js/service.js"></script>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#/view1">View1</a></li>
+				<li><a href="#/view2">View2</a></li>
+				<li><a href="#/view3">View3</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section ng-view></section>
+
+</body>
+
+</html>
