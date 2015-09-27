@@ -1,0 +1,169 @@
+/*body {
+	font-size: 80%;
+	font-family: Arial, Verdana, sans-serif;
+	letter-spacing: 0.15em;	
+	background-color: #efefef;
+}
+
+#page {
+	width: 960px;
+	border: 4px double #000;
+	padding: 20px;
+	margin: 10px auto;
+}
+
+#logo {
+	width: 303px;
+	margin: 10px auto 25px auto;
+}
+		
+#navigation {
+	list-style-type: none;
+	text-align: center;
+	width: 625px;
+	border-top: 2px solid #000;
+	border-bottom: 1px solid #000;
+	padding: 15px;
+	margin: 0 auto;
+}
+	
+li {
+	margin: 0 3px;
+	display: inline;
+}
+
+#content {
+	text-align: inherit;
+	width: 600px;
+	margin: 20px auto;
+}
+	
+a {
+	color: #000000;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+	
+a:hover, a#current-page {
+	color: #cc3333;
+	background-color: #ffffff;
+}
+
+h1 {
+	font-size: 1.5em;
+}
+
+h2 {
+	font-size: 1.33em;
+}
+
+h3 {
+	font-size: 1.25em;
+}
+
+
+#content img {
+	float: left;
+	margin: 20px;
+}
+
+#column1of2, #column2of2 {
+	width: 280px;
+	float:left;
+	margin: 10px;
+}
+
+#page {
+	overflow: auto;
+	width: 100%;
+}
+
+.clear {
+	clear: both;
+}
+End Layout CSS
+Background Images CSS 
+#gallery_content {
+	width: 500px;
+	margin: 20px auto;
+	overflow: auto;
+
+}
+
+.entry {
+	font-size: 70%;
+	width: 220px;
+	height: 220px;
+	float: left;
+	margin: 10px;
+	background-image: url("images/shadow.png");
+	background-repeat: no-repeat;
+	background-bottom: bottom;
+}
+
+figure {
+	width: 202px;
+	height:193px;
+	margin: 0;
+	padding: 9px;
+	background-color: #e7e3d8;
+}
+
+figure img {
+	width: 200px;
+	height: 150px;
+	border: 1px solid #d6d6d6;
+}
+
+figcaption {
+	padding-top: 5px;
+	padding-left: 25px;
+	background-image: url("images/icon.gif");
+	background-repeat: no-repeat;
+	background-position: bottom left;
+}
+
+figcaption a:link {
+	padding: 0;
+}
+ End Backgound-Images CSS */
+
+/* tables */
+
+table {
+	border:none;
+}
+
+th {
+	text-align: left;
+}
+
+td {
+	text-align: right;
+}
+
+th, td {
+	padding: 5px 30px 5px 10px;
+	font-size: 90%;
+	margin: 0;
+	
+	background-color: #cbd2d8;
+	border-top: 1px solid #f1f8fe;
+	border-bottom: 1px solid #cbd2d8;
+	border-right: 1px solid #cbd2d8;
+
+	text-shadow: 1px 1px 1px #fff;
+}
+
+th:nth-child(even), td:nth-child(even) {
+	background-color:  #F1F8FE;
+}
+
+
+
+
+
+
+
+
+

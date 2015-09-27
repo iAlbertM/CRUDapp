@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Albert Martinez | FWF - Research</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/knockout.js" type="javascript"></script>
+	<script src="js/app.js" type="javascript"></script>
+</head>
+
+<body>
+	<header>
+		<h2>Your seat reservations</h2>
+	</header>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Passenger name</th><th>Meal</th><th>Surcharge</th><th></th>
+			</tr>
+		</thead>
+		<tbody data-bind="foreach: seats">
+			<tr>
+				<td>
+					<input data-bind="value: name" />
+				</td>
+				<td>
+					<select data-bind="options: availableMeals, value: meal, optionsText: 'mealName'"></select>
+				</td>
+				<td data-bind="text: formattedPrice"></td>
+				<td><a href="#" data-bind="click: $root.removeSeat">Remove</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+
+</html>

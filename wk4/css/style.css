@@ -1,0 +1,35 @@
+html { font-size: 62.5%; }
+
+body { font: normal 400 1em/1.5 'Source-Sans-Pro', Helvetica, Arial, sans-serif; }
+
+input:not([type]),
+input[type=text],
+input[type=password],
+select { 
+	background-color: #FFFFCC;
+	border: 1px solid gray;
+	padding: 2px;
+}
+
+table { border:none; }
+
+th { text-align: left; }
+
+td { 
+	text-align: right;
+
+}
+
+th, td {
+	padding: 5px 30px 5px 10px;
+	font-size: 90%;
+	margin: 0;
+	
+	border-top: 1px solid #f1f8fe;
+	border-bottom: 1px solid #cbd2d8;
+	border-right: 1px solid #cbd2d8;
+	text-shadow: 1px 1px 1px #fff;
+}
+
+thead { 	background-color: #cbd2d8; }
+tr:nth-child(even) { background-color:  #F1F8FE; }
