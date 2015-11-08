@@ -1,4 +1,7 @@
-html { font-size: 62.5%; }
+html { 
+	font-size: 62.5%;
+	background-color: rgb(40, 60, 62);
+}
 
 body {
 	font: normal 1em/1.4 "Roboto Condensed", "Roboto", sans-serif;
@@ -9,7 +12,7 @@ h1,
 h2,
 p + p {
 	font-family: "Roboto Condensed", "Roboto", sans-serif;
-	color: #757575;
+	color: rgba(248, 249, 145, 100);
 }
 
 h1 { 
@@ -54,19 +57,21 @@ input[type=submit] {
 }
 
 button {
-	background-color: #000;
+	opacity: 0;
+	background-color:rgba(61, 49, 91, 100);
 	float: right;
 	width: 3rem;
 	height: 3rem;
 	font-size: 1rem;
-	border-radius: 0.5rem;
 }
 
-button:hover {
-	color: #fff;
-	background-color: #F44336;
+li:hover button {
+	border-radius: 100px;
+	opacity: 1;
+	color: #000;
+	background-color: #fff;
 	opacity: 0.7;
-	transition: background .25s ease-in-out;
+	transition:all .30s ease-in;
 }
 
 input {
@@ -137,8 +142,11 @@ ul {
 }
 
 li {
+	color: rgba(248, 249, 145, 100);
 	padding: 2rem 1.6rem;
 	border-bottom: 1px solid rgba(205, 220, 57, 0.59);
+	display:block;
+	box-shadow: 0px 0px 10px -3px rgba(248, 249, 145, 100);
 }
 
 li:last-child { border-bottom: none; }
@@ -156,6 +164,11 @@ footer {
 
 
 @media (min-width: 600px) {
+	body {
+		max-width: 640px;
+		margin: auto;
+	}
+	
 	header,
 	main {
 		max-width: 40rem;
@@ -170,7 +183,8 @@ footer {
 	
 	h1 { 
 		font-size: 4.5rem;
-		text-align: left;
+		font-family: 'lemon';
+		
 	}
 
 	p + p { 
@@ -224,6 +238,9 @@ footer {
 	
 	ul {
 		margin: 10rem auto 4rem;
+		box-shadow: 0 0 25px rgba(205, 209, 255, 0.4);
+/*		border: 1px groove rgba(255, 255, 255,0.25);*/
+		
 	}
 	
 	ul li {
