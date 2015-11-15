@@ -1,9 +1,9 @@
 var app = angular.module('myApp', []);
-app.controller('controller1', function($scope) {
+app.controller('myController', function($scope) {
 		
 	$scope.item;
 	
-	$scope.groceries = ['Starburst', 'Baskin Robins Cookie Dough - Pint', 'Lactaid Milk', 'Simply Apple Juice'];
+	$scope.groceries = ['Apples', 'Oranges', 'Lactaid Milk', 'Simply Lemonade'];
 
 	$scope.addItem = function(){
 			$scope.groceries.push($scope.item);
